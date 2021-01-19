@@ -1,0 +1,138 @@
+% Based on Resume in Latex Template by Sourabh Bajaj
+\documentclass[letterpaper,11pt]{article}
+
+% packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+
+\usepackage[left=1.25cm,right=1.25cm,top=2cm,bottom=2cm]{geometry}
+
+\definecolor{blue}{RGB}{22, 112, 255}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=black,
+filecolor=blue,
+urlcolor=blue,
+}
+
+% indent space
+\titlespacing{\section}{0pt}{1px}{2ex}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\begin{document}
+
+% header
+\begin{center} 
+{\Large \textbf{Joe Smith}}\\
+\vspace{1px}
+{\footnotesize
+\faicon{github} \hspace{1px} \href{https://github.com/Joe-Smith}{Joe Smith}
+\hspace{8px}
+\faicon{linkedin} \hspace{.1px} \href{https://www.linkedin.com/in/Joe-Smith/}{Joe-Smith}
+\hspace{8px} \faicon{globe} \hspace{1px} \href{https://joesmith.com}{joesmith.com}
+\hspace{8px}
+}\\
+{\footnotesize
+\faicon{envelope} \hspace{1px} \href{mailto:joesmith@gmail.com}{joesmith@gmail.com}
+\hspace{8px} 
+\faicon{phone} \hspace{1px}
+(999) 999-9999
+}
+\end{center}
+\vspace{-5pt}
+
+% education
+\section{\color{blue}Education}
+\vspace{5pt}
+
+\begin{addmargin}[1em]{2em}% 1em left, 2em right
+\textbf{University of America}\hfill \textbf{September 2019 - April 2023}\\
+\setlength\parindent{1cm} B.Sc. Computing Science with Honors
+\end{addmargin}
+\vspace{5pt}
+
+% skills
+\section{\color{blue}Skills}
+\vspace{5pt}
+\begin{addmargin}[1em]{2em}% 1em left, 2em right
+\noindent \textbf{Front end:} React, JavaScript/TypeScript, CSS, HTML, Jekyll, WebAssembly\\
+\noindent \textbf{Back end:} Python (Django), C/C++, C\#, SQL\\
+\noindent \textbf{Other:} AWS, Git, Shell Script, Lua, Unity, Unreal
+\end{addmargin}
+\vspace{5pt}
+
+% projects
+\section{\color{blue}Projects}
+\vspace{5pt}
+\begin{addmargin}[1em]{2em}% 1em left, 2em right
+
+% project 1
+\noindent\href{https://github.com/Joe-Smith}{\textbf{Django Ecommerce Website:}}  \hfill \textbf{June 2020} 
+\vspace{5pt}
+
+\noindent An ecommerce website build on Django and Bootstrap with login and shopping cart (connected to Stripe)
+\vspace{-8pt}
+\begin{itemize}
+    \item \textbf{Technology/Tools:} Django (Python), Stripe, HTML, CSS, JavaScript, Adobe Illustrator
+\vspace{-10pt}
+    \item Full host of features such as editing profiles, adding, removing from cart, reset password, ordering, and purchasing with Stripe
+\vspace{-10pt}
+    \item Hosted on AWS S3 and Elastic Beanstalk
+\vspace{-10pt}
+    \item Demo and Source Code: \faicon{github}  \href{https://github.com/Joe-Smith}{\underline{Joe-Smith/django-app}}
+\end{itemize}
+
+% project 2
+\noindent\href{https://github.com/Joe-Smith}{\textbf{Emoji Finder:}}  \hfill \textbf{November 2020} 
+\vspace{5pt}
+
+\noindent A React application that finds the emojis you want via a search bar
+\vspace{-8pt}
+\begin{itemize}
+    \item \textbf{Technology/Tools:} React, JavaScript, CSS, HTML
+\vspace{-10pt}
+    \item Parsed and formatted JSON formatted data with React
+\vspace{-10pt}
+    \item Website Link: \faicon{globe} \href{https://github.com/Joe-Smith}{\underline{Joe-Smith.com/emojis-finder}}
+\end{itemize}
+
+\end{addmargin}
+\vspace{5pt}
+% employment?
+\section{\color{blue}Employment}
+\vspace{5pt}
+% ...
+% use project as template
+
+
+\section{\color{blue}Volunteering}
+\vspace{5pt}
+\begin{addmargin}[1em]{2em}% 1em left, 2em right
+\noindent{\color{blue}\textbf{Chess Club Supervisor:}}\\
+\vspace{5pt}
+Started and supervised an school chess club
+\end{addmargin}
+\vspace{5pt}
+
+\section{\color{blue}Achievements}
+\vspace{5pt}
+
+\begin{addmargin}[1em]{2em}% 1em left, 2em right
+\begin{itemize}
+  \item Top Company of the Year \hfill  \textbf{2019}
+\vspace{-6pt}
+  \item Chess Champion \hfill \textbf{2014-2019}
+\vspace{-6pt}
+\end{itemize}
+\end{addmargin}
+
+\end{document}
